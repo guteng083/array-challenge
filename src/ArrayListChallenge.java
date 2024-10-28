@@ -52,5 +52,10 @@ public class ArrayListChallenge {
         names.addAll(List.of(n));
         Collections.sort(names);
         System.out.println(names);
+
+        // 12. Balik urutan ArrayList menggunakan Collections.reverse()
+        List<Integer> numbers = Arrays.asList(1,2,3,4);
+        Collections.reverse(numbers);
+        System.out.println(numbers);
     }
 }
