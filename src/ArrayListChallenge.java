@@ -43,5 +43,9 @@ public class ArrayListChallenge {
         List<String> list8 = new ArrayList<>(List.of("A", "B", "C"));
         list8.remove("B");
         System.out.println(list8);
+
+        // 10. Ambil element dari index tertentu
+        List<String> list9 = new ArrayList<>(List.of("X", "Y", "Z"));
+        System.out.println(list9.get(1));
     }
 }
