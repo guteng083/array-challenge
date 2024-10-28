@@ -33,5 +33,10 @@ public class ArrayListChallenge {
 
         // 7. Inisialisasi ArrayList dengan capacity awal
         List<String> list6 = new ArrayList<>(20);
+
+        // 8. Tambahkan element di index tertentu
+        List<String> list7 = new ArrayList<>(List.of("A", "C"));
+        list7.add(1, "B");
+        System.out.println(list7);
     }
 }
