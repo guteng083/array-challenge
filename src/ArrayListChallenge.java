@@ -38,5 +38,10 @@ public class ArrayListChallenge {
         List<String> list7 = new ArrayList<>(List.of("A", "C"));
         list7.add(1, "B");
         System.out.println(list7);
+
+        // 9. Hapus element dari ArrayList
+        List<String> list8 = new ArrayList<>(List.of("A", "B", "C"));
+        list8.remove("B");
+        System.out.println(list8);
     }
 }
