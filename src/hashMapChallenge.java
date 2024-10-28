@@ -15,5 +15,10 @@ public class hashMapChallenge {
         Map<String, Integer> map2 = new HashMap<>();
         map2.put("apple", 5);
         System.out.println(map2.get("apple"));
+
+        // 4. Check apakah HashMap contains key tertentu
+        Map<String, String> map3 = new HashMap<>();
+        map3.put("name", "John");
+        System.out.println(map3.containsKey("name"));
     }
 }
