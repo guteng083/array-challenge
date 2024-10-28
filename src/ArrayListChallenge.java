@@ -64,5 +64,34 @@ public class ArrayListChallenge {
         int min = Collections.min(scores);
         System.out.println("Nilai tertinggi: " + max);
         System.out.println("Nilai terendah: " + min);
+
+        // 14. Buat program untuk menyimpan daftar nilai:
+        List<Integer> scores2 = Arrays.asList(75,80,85,90,70);
+        for(int f = 0; f < scores2.size();f++){
+            for(int g = f + 1; g < scores2.size();g++){
+                if(scores2.get(f)>scores2.get(g)){
+                    int temp = scores2.get(f);
+                    int temp1 = scores2.get(g);
+                    scores2.set(f, temp1);
+                    scores2.set(g, temp);
+                }
+
+            }
+        }
+        Collections.reverse(scores2);
+        System.out.println("Nilai Diurutkan: " + scores2);
+        System.out.print("Tiga nilai tertinggi: ");
+        int sum = 0;
+        for(int x = 0; x < scores2.size();x++){
+            if(x < 2){
+                System.out.print(scores2.get(x) + ", ");
+            } else if(x == 2){
+                System.out.print(scores2.get(x));
+            }
+            sum += scores2.get(x);
+        }
+        System.out.println("");
+        double mean = sum / scores2.size();
+        System.out.println("Rata-rata nilai: " + mean);
     }
 }
