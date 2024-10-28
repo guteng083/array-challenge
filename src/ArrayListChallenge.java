@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class ArrayListChallenge {
     public static void main(String[] args) {
@@ -47,5 +45,12 @@ public class ArrayListChallenge {
         // 10. Ambil element dari index tertentu
         List<String> list9 = new ArrayList<>(List.of("X", "Y", "Z"));
         System.out.println(list9.get(1));
+
+        // 11. Urutkan ArrayList menggunakan Collections.sort()
+        List<String> names = new ArrayList<>();
+        String[] n = {"Charlie", "Alice", "Bob"};
+        names.addAll(List.of(n));
+        Collections.sort(names);
+        System.out.println(names);
     }
 }
