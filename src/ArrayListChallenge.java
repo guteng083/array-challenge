@@ -26,5 +26,9 @@ public class ArrayListChallenge {
         // 5. Print size dari ArrayList
         List<String> list4 = Arrays.asList("X", "Y", "Z");
         System.out.println(list4.size());
+
+        // 6. Periksa apakah ArrayList memiliki element tertentu
+        List<String> list5 = List.of("Red", "Blue");
+        System.out.println(list5.contains("Red"));
     }
 }
