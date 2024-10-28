@@ -57,5 +57,12 @@ public class ArrayListChallenge {
         List<Integer> numbers = Arrays.asList(1,2,3,4);
         Collections.reverse(numbers);
         System.out.println(numbers);
+
+        // 13. Cari nilai maximum dan minimum dalam ArrayList menggunakan Collections min or max methods
+        List<Integer> scores = Arrays.asList(85,90,75,95,80);
+        int max = Collections.max(scores);
+        int min = Collections.min(scores);
+        System.out.println("Nilai tertinggi: " + max);
+        System.out.println("Nilai terendah: " + min);
     }
 }
