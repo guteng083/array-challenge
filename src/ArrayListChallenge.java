@@ -17,5 +17,10 @@ public class ArrayListChallenge {
         Integer[] i = {1,2,3};
         ArrayList<Integer> list2 = new ArrayList<>(List.of(i));
         System.out.println(list2);
+
+        // 4. Tambahkan single element ke ArrayList
+        List<String> list3 = new ArrayList<>();
+        list3.add("Hello");
+        System.out.println(list3);
     }
 }
