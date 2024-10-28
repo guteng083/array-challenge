@@ -10,5 +10,13 @@ public class setChallenge {
         Set<Integer> uniqueNumbers = new HashSet<>(numbers);
         System.out.println(uniqueNumbers);
 
+        // 2. Check Nama Duplikat
+        List<String> names = new ArrayList<>(List.of("Budi", "Ani", "Budi", "Cindy"));
+        Set<String> uniqueNames = new HashSet<>(names);
+        if(uniqueNames.size() != names.size()){
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        }
     }
 }
