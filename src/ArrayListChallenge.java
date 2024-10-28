@@ -30,5 +30,8 @@ public class ArrayListChallenge {
         // 6. Periksa apakah ArrayList memiliki element tertentu
         List<String> list5 = List.of("Red", "Blue");
         System.out.println(list5.contains("Red"));
+
+        // 7. Inisialisasi ArrayList dengan capacity awal
+        List<String> list6 = new ArrayList<>(20);
     }
 }
