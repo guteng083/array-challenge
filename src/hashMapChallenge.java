@@ -39,5 +39,9 @@ public class hashMapChallenge {
         map6.put("y", 2);
         map6.put("z", 3);
         System.out.println(map6.size());
+
+        // 8. Check apakah HashMap kosong
+        Map<String, Integer> map7 = new HashMap<>();
+        System.out.println(map7.isEmpty());
     }
 }
