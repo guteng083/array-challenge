@@ -92,5 +92,13 @@ public class hashMapChallenge {
         map12.put("B", 2);
         map13.putAll(map12);
         System.out.println(map13);
+
+        // 15. Print key dan value berpasangan
+        Map<String, Object> map14 = new HashMap<>();
+        map14.put("nama", "Ani");
+        map14.put("nilai", 90);
+        for(String key : map14.keySet()) {
+            System.out.println("Key: " + key + "," + " Value: " + map14.get(key));
+        }
     }
 }
