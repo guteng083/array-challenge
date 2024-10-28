@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class setChallenge {
     public static void main(String[] args) {
@@ -26,5 +23,18 @@ public class setChallenge {
         set1.addAll(list1);
         set1.addAll(list2);
         System.out.println(set1);
+
+        // 4. Temukan Nama Duplikat
+        List<String> mahasiswa = new ArrayList<>(List.of("Ani", "Budi", "Ani", "Cindy", "Budi", "Dodi"));
+        Set<String> mahasiswaSet = new HashSet<>();
+        Set<String> set2 = new HashSet<>();
+        for(String s : mahasiswa){
+            if(!mahasiswaSet.contains(s)){
+                mahasiswaSet.add(s);
+            } else {
+                set2.add(s);
+            }
+        }
+        System.out.println(set2);
     }
 }
