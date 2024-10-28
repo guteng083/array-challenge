@@ -1,5 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class hashMapChallenge {
     public static void main(String[] args) {
@@ -55,5 +54,15 @@ public class hashMapChallenge {
         Map<String, Integer> map9 = new HashMap<>();
         map9.put("count", 5);
         System.out.println(map9.getOrDefault("total", 0));
+
+        // 11. Print semua keys dari HashMap
+        Map<String, Object> map10 = new HashMap<>();
+        map10.put("nama", "Budi");
+        map10.put("usia", 20);
+        List<String> keys = new ArrayList<>(map10.keySet());
+        Collections.sort(keys);
+        for(String key : keys) {
+            System.out.println(key);
+        }
     }
 }
