@@ -22,5 +22,9 @@ public class ArrayListChallenge {
         List<String> list3 = new ArrayList<>();
         list3.add("Hello");
         System.out.println(list3);
+
+        // 5. Print size dari ArrayList
+        List<String> list4 = Arrays.asList("X", "Y", "Z");
+        System.out.println(list4.size());
     }
 }
