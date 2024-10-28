@@ -20,5 +20,11 @@ public class hashMapChallenge {
         Map<String, String> map3 = new HashMap<>();
         map3.put("name", "John");
         System.out.println(map3.containsKey("name"));
+
+        // 5. Check apakah HashMap contains value tertentu
+        Map<String, Integer> map4 = new HashMap<>();
+        map4.put("age", 25);
+        System.out.println(map4.containsValue(25));
+
     }
 }
