@@ -75,5 +75,14 @@ public class hashMapChallenge {
         for(Integer key : keys2) {
             System.out.println(key);
         }
+
+        // 13. Put multiple entries sekaligus ke HashMap
+        Map<String, Integer> map11 = new HashMap<>();
+        String[] mapKey = {"satu", "dua", "tiga"};
+        Integer[] mapValue = {1,2,3};
+        for(int i = 0; i < mapKey.length; i++) {
+            map11.put(mapKey[i], mapValue[i]);
+        }
+        System.out.println(map11);
     }
 }
