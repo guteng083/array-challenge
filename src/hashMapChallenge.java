@@ -43,5 +43,12 @@ public class hashMapChallenge {
         // 8. Check apakah HashMap kosong
         Map<String, Integer> map7 = new HashMap<>();
         System.out.println(map7.isEmpty());
+
+        // 9. Clear semua entries dalam HashMap
+        Map<String, Integer> map8 = new HashMap<>();
+        map8.put("a", 1);
+        map8.put("b", 2);
+        map8.clear();
+        System.out.println(map8);
     }
 }
