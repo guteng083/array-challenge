@@ -10,5 +10,10 @@ public class hashMapChallenge {
         // 2. Put single entry ke HashMap
         map.put("satu", 1);
         System.out.println(map);
+
+        // 3. Get value dari HashMap berdasarkan key
+        Map<String, Integer> map2 = new HashMap<>();
+        map2.put("apple", 5);
+        System.out.println(map2.get("apple"));
     }
 }
