@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ArrayListChallenge {
+public class arrayListChallenge {
     public static void main(String[] args) {
         // 1. Buat sebuah empty ArrayList bertipe String
         List<String> list = new ArrayList<>();
