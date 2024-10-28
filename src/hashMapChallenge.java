@@ -50,5 +50,10 @@ public class hashMapChallenge {
         map8.put("b", 2);
         map8.clear();
         System.out.println(map8);
+
+        // 10. Get value dengan default value jika key tidak ada
+        Map<String, Integer> map9 = new HashMap<>();
+        map9.put("count", 5);
+        System.out.println(map9.getOrDefault("total", 0));
     }
 }
