@@ -20,7 +20,7 @@ public class ArrayChallenge {
 
         // cek length array genap atau ganjil
         int[] nums2 = new int[]{1, 2, 3, 4, 5};
-        if(nums.length % 2 == 0) {
+        if(nums2.length % 2 == 0) {
             System.out.println("Length genap");
         } else {
             System.out.println("Length ganjil");
@@ -70,7 +70,7 @@ public class ArrayChallenge {
         // Temukan jumlah (sum) dari semua element dalam array
         int[] nums8 = {5,2,8,1,9};
         int sum = 0;
-        for(int num: nums){
+        for(int num: nums8){
             sum += num;
         }
         System.out.println("");
