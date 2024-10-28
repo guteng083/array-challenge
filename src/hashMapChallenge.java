@@ -59,9 +59,20 @@ public class hashMapChallenge {
         Map<String, Object> map10 = new HashMap<>();
         map10.put("nama", "Budi");
         map10.put("usia", 20);
+        System.out.println(map10);
         List<String> keys = new ArrayList<>(map10.keySet());
         Collections.sort(keys);
         for(String key : keys) {
+            System.out.println(key);
+        }
+
+        // 12. Print semua values dari HashMap
+        Map<String, Integer> score = new HashMap<>();
+        score.put("math", 80);
+        score.put("science", 85);
+        List<Integer> keys2 = new ArrayList<>(score.values());
+        Collections.sort(keys2);
+        for(Integer key : keys2) {
             System.out.println(key);
         }
     }
