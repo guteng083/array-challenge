@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class ArrayListChallenge {
     public static void main(String[] args) {
@@ -12,6 +13,9 @@ public class ArrayListChallenge {
         ArrayList<String> list1 = new ArrayList<>(Arrays.asList(s));
         System.out.println(list1);
 
-
+        // 3. Inisialisasi ArrayList menggunakan List.of()
+        Integer[] i = {1,2,3};
+        ArrayList<Integer> list2 = new ArrayList<>(List.of(i));
+        System.out.println(list2);
     }
 }
