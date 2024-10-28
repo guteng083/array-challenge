@@ -18,5 +18,13 @@ public class setChallenge {
         } else {
             System.out.println(false);
         }
+
+        // 3. Gabung Dua List Tanpa Duplikat
+        List<String> list1 = new ArrayList<>(List.of("A", "B", "C"));
+        List<String> list2 = new ArrayList<>(List.of("B", "C", "D"));
+        Set<String> set1 = new HashSet<>();
+        set1.addAll(list1);
+        set1.addAll(list2);
+        System.out.println(set1);
     }
 }
