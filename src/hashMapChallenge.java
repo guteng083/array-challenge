@@ -84,5 +84,13 @@ public class hashMapChallenge {
             map11.put(mapKey[i], mapValue[i]);
         }
         System.out.println(map11);
+
+        // 14. Copy semua entries dari satu HashMap ke HashMap lain
+        Map<String, Integer> map12 = new HashMap<>();
+        Map<String, Integer> map13 = new HashMap<>();
+        map12.put("A", 1);
+        map12.put("B", 2);
+        map13.putAll(map12);
+        System.out.println(map13);
     }
 }
