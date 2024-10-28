@@ -93,5 +93,19 @@ public class ArrayListChallenge {
         System.out.println("");
         double mean = sum / scores2.size();
         System.out.println("Rata-rata nilai: " + mean);
+
+        // 15. Buat program untuk mengelola daftar nama:
+        List<String> names2 = new ArrayList<>(List.of("Budi", "Ani", "Cindy", "Dodi"));
+        System.out.println("List awal: " + names2);
+        names2.add(0, "Eko");
+        System.out.println("Setelah tambah Eko: " + names2);
+        Collections.sort(names2);
+        System.out.println("Setelah diurutkan: " + names2);
+        System.out.print("Nama dengan awalan A atau B: ");
+        for(String name: names2){
+            if(name.startsWith("A") || name.startsWith("B")){
+                System.out.print(name + " ");
+            }
+        }
     }
 }
