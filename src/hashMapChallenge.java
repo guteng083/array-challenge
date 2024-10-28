@@ -32,5 +32,12 @@ public class hashMapChallenge {
         map5.put("B", 2);
         map5.remove("A");
         System.out.println(map5);
+
+        // 7. Print size dari HashMap
+        Map<String, Integer> map6 = new HashMap<>();
+        map6.put("x", 1);
+        map6.put("y", 2);
+        map6.put("z", 3);
+        System.out.println(map6.size());
     }
 }
