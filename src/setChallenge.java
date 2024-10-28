@@ -36,5 +36,20 @@ public class setChallenge {
             }
         }
         System.out.println(set2);
+
+        // 5. Filter Email Domain
+        List<String> email = new ArrayList<>(List.of("ani@gmail.com", "budi@yahoo.com", "cindy@gmail.com", "dodi@gmail.com"));
+        Map<String, Integer> map = new HashMap<>();
+        Set<String> set3 = new HashSet<>();
+        for(String s : email){
+            String domain = s.split("@")[1];
+            if(!map.containsKey(domain)){
+                map.put(domain, 1);
+            } else {
+                map.put(domain, map.get(domain) + 1);
+            }
+        }
+        System.out.println("gmail.com: " + map.get("gmail.com") + " email(s)");
+        System.out.println("yahoo.com: " + map.get("yahoo.com") + " email(s)");
     }
 }
