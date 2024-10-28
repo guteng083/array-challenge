@@ -26,5 +26,11 @@ public class hashMapChallenge {
         map4.put("age", 25);
         System.out.println(map4.containsValue(25));
 
+        // 6. Remove entry dari HashMap berdasarkan key
+        Map<String, Integer> map5 = new HashMap<>();
+        map5.put("A", 1);
+        map5.put("B", 2);
+        map5.remove("A");
+        System.out.println(map5);
     }
 }
