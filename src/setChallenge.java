@@ -41,9 +41,10 @@ public class setChallenge {
         List<String> email = new ArrayList<>(List.of("ani@gmail.com", "budi@yahoo.com", "cindy@gmail.com", "dodi@gmail.com"));
         Map<String, Integer> map = new HashMap<>();
         Set<String> set3 = new HashSet<>();
+
         for(String s : email){
             String domain = s.split("@")[1];
-            if(!map.containsKey(domain)){
+            if(set3.add(domain)){
                 map.put(domain, 1);
             } else {
                 map.put(domain, map.get(domain) + 1);
