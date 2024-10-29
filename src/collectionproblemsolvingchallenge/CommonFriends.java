@@ -46,8 +46,8 @@ public class CommonFriends {
             }
         }
 
-        for(String friend : friends1) {
-            if(!mutualFriends.contains(friend)) {
+        for(String friend : friendsSet) {
+            if(!friends2.contains(friend)) {
                 uniqueFriends1.add(friend);
             }
         }
