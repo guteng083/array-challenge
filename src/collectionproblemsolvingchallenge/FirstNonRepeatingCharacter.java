@@ -1,8 +1,6 @@
 package collectionproblemsolvingchallenge;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class FirstNonRepeatingCharacter {
@@ -27,7 +25,6 @@ public class FirstNonRepeatingCharacter {
         for(String string: str){
             map.put(string, map.getOrDefault(string, 0) + 1);
         }
-        System.out.println(map);
         for(int i = 0; i < str.length; i++){
             if(map.get(str[i]) == 1){
                 index = i;
